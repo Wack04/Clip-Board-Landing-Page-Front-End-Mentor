@@ -23,11 +23,132 @@ body {
 }
 
 /* Typhography*/
-h1 {
+h1,
+h2 {
   font-weight: 600;
   color: var(--Dark-Grayish-Blue);
+  text-align: center;
+}
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
 }
 p {
-  font-weight: 400;
   color: var(--Grayish-Blue);
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Buttons */
+
+button {
+  min-width: 78%;
+  height: 2.2rem;
+  border: 0;
+  border-radius: 2rem;
+  outline: 0;
+  margin: 0.6rem auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.btn--ios,
+.btn--mac {
+  color: #ffff;
+}
+.btn--ios {
+  background-color: var(--Strong-Cyan);
+}
+.btn--mac {
+  background-color: var(--Light-Blue);
+}
+
+/* Images Common Settings */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url(./images/bg-header-mobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.hero__logo {
+  width: 5.6rem;
+  padding-top: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+
+/* Snippets */
+.snippets {
+  margin-bottom: 5rem;
+}
+.snippets__image {
+  max-width: 84%;
+}
+
+/* Access section */
+.access__image {
+  max-width: 88%;
+}
+.access {
+  margin-bottom: 4rem;
+}
+
+/* Uses Section */
+.uses {
+  margin-bottom: 4rem;
+}
+
+/* Companies Section */
+.companies {
+  margin-bottom: 5rem;
+}
+.companies {
+  margin-bottom: 5rem;
+}
+.companies > img {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.companies__logos {
+  width: 7.2rem;
+}
+
+/* download */
+.download {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+.footer__logo {
+  max-width: 2.8rem;
+}
+ul > li {
+  list-style-type: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.social-media {
+  display: inline-flex;
+  gap: 2rem;
 }
