@@ -12,7 +12,6 @@ body {
 }
 
 /* Colors */
-
 :root {
   /* Primary */
   --Strong-Cyan: hsl(171, 66%, 44%);
@@ -25,40 +24,39 @@ body {
 /* Typhography*/
 h1,
 h2 {
-  font-weight: 600;
   color: var(--Dark-Grayish-Blue);
   text-align: center;
+  font-weight: 600;
 }
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 1.2rem;
 }
 h2 {
+  font-size: 1.4rem;
   margin-top: 2rem;
   margin-bottom: 0.7rem;
-  font-size: 1.2rem;
 }
 p {
   color: var(--Grayish-Blue);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 2.2rem;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 400;
 }
 
-/* Buttons */
-
+/* Button */
 button {
-  min-width: 78%;
-  height: 2.2rem;
   border: 0;
   border-radius: 2rem;
   outline: 0;
-  margin: 0.6rem auto;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  min-width: 78%;
+  height: 2.6rem;
+  margin: 0.6rem auto;
 }
 .btn--ios,
 .btn--mac {
@@ -71,12 +69,7 @@ button {
   background-color: var(--Light-Blue);
 }
 
-/* Images Common Settings */
-img {
-  display: block;
-  margin: 0 auto;
-}
-
+/* WebPage Sections */
 /* Hero Section */
 .hero {
   background-image: url(./images/bg-header-mobile.png);
@@ -91,64 +84,74 @@ img {
   margin-bottom: 3.2rem;
 }
 
-/* Snippets */
+/* Snippets Section */
 .snippets {
   margin-bottom: 5rem;
 }
 .snippets__image {
+  display: block;
   max-width: 84%;
+  margin: 0 auto;
 }
 
 /* Access section */
-.access__image {
-  max-width: 88%;
-}
 .access {
   margin-bottom: 4rem;
+}
+.access__image {
+  display: block;
+  max-width: 88%;
+  margin: 0 auto;
 }
 
 /* Uses Section */
 .uses {
   margin-bottom: 4rem;
 }
+.uses > img {
+  display: block;
+  margin: 0 auto;
+}
 
 /* Companies Section */
 .companies {
   margin-bottom: 5rem;
 }
-.companies {
-  margin-bottom: 5rem;
+.companies__logos {
+  width: 8rem;
 }
 .companies > img {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.companies__logos {
-  width: 7.2rem;
+  display: block;
+  margin: 0 auto;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
-/* download */
+/* Download Section */
 .download {
-  margin-bottom: 5rem;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
   text-align: center;
 }
 .footer__logo {
   max-width: 2.8rem;
+  margin-bottom: 0.8rem;
 }
-ul > li {
+.footer__links > li {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  font-weight: 600;
   list-style-type: none;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: var(--Grayish-Blue);
-  font-size: 0.8rem;
-  font-weight: 600;
+  margin-bottom: 1.4rem;
 }
-.social-media {
+.footer__media {
   display: inline-flex;
   gap: 2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 3rem;
 }
