@@ -80,7 +80,7 @@ button {
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 5.8rem;
 }
 .hero__logo {
   width: 7rem;
@@ -90,7 +90,7 @@ button {
 
 /* Snippets Section */
 .snippets {
-  margin-bottom: 5rem;
+  margin-bottom: 5.8rem;
 }
 .snippets__image {
   display: block;
@@ -100,7 +100,7 @@ button {
 
 /* Access section */
 .access {
-  margin-bottom: 4rem;
+  margin-bottom: 5.8rem;
 }
 .access__image {
   display: block;
@@ -110,7 +110,10 @@ button {
 
 /* Uses Section */
 .uses {
-  margin-bottom: 4rem;
+  margin-bottom: 5.4rem;
+}
+#uses--space {
+  margin-bottom: 2.6rem;
 }
 .uses > img {
   display: block;
@@ -119,7 +122,7 @@ button {
 
 /* Companies Section */
 .companies {
-  margin-bottom: 5rem;
+  margin-bottom: 5.4rem;
 }
 .companies__logos {
   width: 8rem;
@@ -134,7 +137,7 @@ button {
 /* Download Section */
 .download {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 5.4rem;
 }
 
 /* Footer Section */
