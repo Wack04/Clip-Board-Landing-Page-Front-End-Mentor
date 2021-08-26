@@ -111,6 +111,7 @@ button {
 /* Uses Section */
 .uses {
   margin-bottom: 5.4rem;
+  text-align: center;
 }
 #uses--space {
   margin-bottom: 2.6rem;
