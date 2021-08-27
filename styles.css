@@ -29,9 +29,9 @@ h2 {
   font-weight: 600;
 }
 h1 {
-  font-size: 1.6rem;
   max-width: 90%;
   margin: 0 auto;
+  font-size: 1.6rem;
   margin-bottom: 1.2rem;
 }
 h2 {
@@ -42,9 +42,9 @@ h2 {
 p {
   color: var(--Grayish-Blue);
   text-align: center;
+  max-width: 90%;
   font-size: 1rem;
   font-weight: 400;
-  max-width: 90%;
   margin: 0 auto;
   margin-bottom: 2.2rem;
 }
@@ -54,6 +54,7 @@ button {
   border: 0;
   border-radius: 2rem;
   outline: 0;
+  cursor: pointer;
   font-size: 0.9rem;
   font-weight: 600;
   min-width: 78%;
@@ -62,16 +63,16 @@ button {
 }
 .btn--ios,
 .btn--mac {
+  color: #ffff;
   margin-right: 0.6rem;
   margin-left: 0.6rem;
-  color: #ffff;
 }
 .btn--ios {
   background-color: var(--Strong-Cyan);
   border-bottom: 3px solid hsl(171, 66%, 37%);
   box-shadow: 0 5px 15px rgba(27, 131, 115, 0.4);
 }
-.btn-ios:hover {
+.btn--ios:hover {
   opacity: 0.8;
 }
 .btn--mac {
@@ -79,7 +80,7 @@ button {
   border-bottom: 3px solid hsl(233, 63%, 59%);
   box-shadow: 0 5px 15px rgba(68, 81, 175, 0.4);
 }
-.btn-mac:hover {
+.btn--mac:hover {
   opacity: 0.8;
 }
 
@@ -120,8 +121,8 @@ button {
 
 /* Uses Section */
 .uses {
-  margin-bottom: 5.4rem;
   text-align: center;
+  margin-bottom: 5.4rem;
 }
 #uses--space {
   margin-bottom: 2.6rem;
@@ -165,11 +166,15 @@ footer {
 }
 .footer__links > li {
   color: var(--Grayish-Blue);
+  cursor: pointer;
+  list-style-type: none;
   font-size: 1rem;
   font-weight: 600;
-  list-style-type: none;
   margin-top: 1rem;
   margin-bottom: 1.4rem;
+}
+.footer__links > li:hover {
+  color: var(--Strong-Cyan);
 }
 .footer__media {
   display: inline-flex;
@@ -177,24 +182,31 @@ footer {
   margin-top: 1.6rem;
   margin-bottom: 3rem;
 }
+.footer__media > img {
+  cursor: pointer;
+}
+.footer__media > img:hover {
+  filter: invert(28%) sepia(79%) saturate(260%) hue-rotate(86deg)
+    brightness(118%) contrast(100%);
+}
 
 /* Media Queary */
 /* 620 width */
 @media screen and (min-width: 620px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     max-width: 58%;
   }
   h2 {
     font-size: 1.6rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 58%;
   }
   button {
-    min-width: 34%;
     height: 3.4rem;
+    min-width: 34%;
   }
   .hero {
     background-image: url(./images/bg-header-desktop.png);
@@ -221,60 +233,68 @@ footer {
     margin-bottom: 10rem;
   }
   .download {
-    margin-bottom: 7rem;
-  }
-  .footer__links > li {
-    font-size: 0.9rem;
-    white-space: nowrap;
+    margin-bottom: 7.6rem;
   }
   .footer__logo {
     max-width: 3.4rem;
+  }
+  .footer__links > li {
+    white-space: nowrap;
+    font-size: 0.9rem;
   }
   .footer__media > img {
     min-width: 1.6rem;
   }
 }
 
-/* 720 width */
+/* 720 width (Sizing) */
 @media screen and (min-width: 720px) {
   .snippets__image {
     max-width: 78%;
   }
   .companies__logos {
-    max-width: 6.4rem;
+    max-width: 7.6rem;
   }
 }
 
 /* 860 width */
 @media screen and (min-width: 860px) {
-  .hero > p {
-    margin-bottom: 4.2rem;
-  }
   button {
     min-width: 28%;
   }
+  .hero > p {
+    margin-bottom: 4.2rem;
+  }
   .snippets__grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 54% 46%;
     place-items: center;
   }
   .snippets__image {
-    margin-left: -2rem;
     max-width: 98%;
+    margin-left: -2rem;
   }
-  .snippets__content > h2 {
-    font-size: 1.2rem;
+  .snippets__text {
+    padding-inline-start: 4rem;
   }
-  .snippets__content > p {
+  .snippets__text > h2,
+  .snippets__text > p {
+    margin-left: 0;
+    text-align: left;
+  }
+  .snippets__text > h2 {
+    font-size: 1.5rem;
+  }
+  .snippets__text > p {
+    max-width: 74%;
     font-size: 0.9rem;
   }
   .uses__grid {
     display: grid;
     grid-template-columns: auto auto auto;
     place-items: center;
-    align-items: center;
   }
-  .uses__grid__section {
+  .uses__grid__sections {
     text-align: center;
   }
   .companies {
@@ -286,13 +306,10 @@ footer {
   }
 }
 
-/* 986 width */
+/* 986 width (Sizing & Footer Grid) */
 @media screen and (min-width: 986px) {
   button {
     min-width: 26%;
-  }
-  .companies__logos {
-    max-width: 7.6rem;
   }
   footer {
     display: grid;
@@ -314,7 +331,7 @@ footer {
   }
 }
 
-/* 1120 width */
+/* 1120 width (Sizing) */
 @media screen and (min-width: 1120px) {
   button {
     min-width: 22%;
