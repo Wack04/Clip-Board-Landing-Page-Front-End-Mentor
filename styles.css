@@ -62,8 +62,8 @@ button {
 }
 .btn--ios,
 .btn--mac {
-  margin-right: 0.8rem;
-  margin-left: 00.8rem;
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
   color: #ffff;
 }
 .btn--ios {
@@ -166,14 +166,6 @@ footer {
 
 /* Media Queary */
 @media screen and (min-width: 620px) {
-  .hero {
-    background-image: url(./images/bg-header-desktop.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .hero > p {
-    margin-bottom: 3.2rem;
-  }
   h1 {
     font-size: 1.8rem;
     max-width: 58%;
@@ -187,14 +179,58 @@ footer {
   }
   button {
     min-width: 34%;
-    height: 3rem;
+    height: 3.4rem;
+  }
+  .hero {
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 10rem;
+  }
+  .hero > p {
+    margin-bottom: 3.2rem;
+  }
+  .snippets {
+    margin-bottom: 10rem;
+  }
+  #snippets__spacing--desktop {
+    margin-bottom: 4rem;
+  }
+  .access {
+    margin-bottom: 7rem;
+  }
+  .uses {
+    margin-bottom: 7rem;
+  }
+  .companies {
+    margin-bottom: 10rem;
+  }
+  .download {
+    margin-bottom: 8rem;
+  }
+  .footer__links > li {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  .footer__logo {
+    max-width: 3.4rem;
+  }
+  .footer__media > img {
+    min-width: 1.6rem;
   }
 }
+
+/* 720 width */
 @media screen and (min-width: 720px) {
   .snippets__image {
     max-width: 78%;
   }
+  .companies__logos {
+    max-width: 6.4rem;
+  }
 }
+
+/* 860 width */
 @media screen and (min-width: 860px) {
   .hero > p {
     margin-bottom: 4.2rem;
@@ -209,7 +245,7 @@ footer {
   }
   .snippets__image {
     margin-left: -2rem;
-    max-width: 96%;
+    max-width: 98%;
   }
   .snippets__content > h2 {
     font-size: 1.2rem;
@@ -233,28 +269,37 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* 986 width */
+@media screen and (min-width: 986px) {
+  button {
+    min-width: 26%;
+  }
+  .companies__logos {
+    max-width: 7.6rem;
+  }
   footer {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10rem;
     place-content: center;
     align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
   }
   ul {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto;
-    gap: 2rem;
+    gap: 0rem 2rem;
   }
   ul > li {
     text-align: left;
   }
 }
-@media screen and (min-width: 986px) {
-  button {
-    min-width: 26%;
-  }
-}
+
+/* 1120 width */
 @media screen and (min-width: 1120px) {
   button {
     min-width: 22%;
